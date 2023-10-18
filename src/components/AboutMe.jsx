@@ -3,23 +3,26 @@ import AboutImg from "../asset/About.jpg";
 
 const About = () => {
   return (
-    <div name="about" className=" bg-white shadow-sm lg:px-60 md:px-20 ">
-      <div className=" flex flex-col  lg:flex-row md:mx-full mt-20 mb-10 px-10 text-center  mx-auto ">
-        <div className="md:w-[200rem] h-auto md:mx-auto lg:mr-14 ">
+    <div
+      name="about"
+      className="bg-white shadow-sm px-4 lg:px-16  py-8 lg:py-16 flex justify-center"
+    >
+      <div className=" flex flex-col lg:flex-row mx-auto max-w-7xl px-4 sm:px-6 sm:mx-16  lg:px-8 mt-10 mb-10 text-center md:mx-0  lg:h-[350px] ">
+        <div className="md:w-2/2  mx-auto mb-10 lg:mb-0 sm:w-2/2 ">
           <img
-            className=" rounded-3xl h-[360px]  mb-10 "
+            className="rounded-3xl  w-[400px] h-[350px] mx-auto lg:mx-0   lg:h-full"
             src={AboutImg}
             alt="About Img"
           />
         </div>
-        <div className="flex flex-col md:text-left pr-5 mb-20 ">
-          <h3 className=" flex items-center justify-center  mb-2 font-semibold text-lg text-blue-500">
+        <div className="flex flex-col lg:w-2/3 lg:pl-8 md:mx-16 lg:mx-0">
+          <h3 className="mb-2 font-semibold text-lg text-blue-500 text-center lg:text-left">
             ABOUT ME
           </h3>
-          <h4 className=" flex text-3xl items-center justify-center font-bold mb-5">
-            Dedicated Front end developer.
+          <h4 className="text-3xl font-bold mb-5 text-center lg:text-left">
+            Dedicated Front-end Developer.
           </h4>
-          <p className=" flex items-center justify-center  ">
+          <p className="text-center lg:text-left">
             As a Junior Front-End Developer, I possess an impressive arsenal of
             skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel
             in designing and maintaining responsive websites that offer a smooth

@@ -9,10 +9,12 @@ const Footer = () => {
 
   const footer = [
     {
+      id: 1,
       name: faSquareGithub,
       link: "https://github.com/kshitij096/",
     },
     {
+      id: 2,
       name: faLinkedin,
       link: "https://in.linkedin.com/",
     },
@@ -27,8 +29,9 @@ const Footer = () => {
           </h3>
 
           <div className=" ">
-            {footer.map(({ name, link }) => (
+            {footer.map(({ id, name, link }) => (
               <a
+                key={id}
                 className=" text-white text-2xl px-2 sm:text-right"
                 href={link}
               >
