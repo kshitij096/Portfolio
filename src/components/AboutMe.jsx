@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="bg-white shadow-sm px-4 lg:px-16  py-8 lg:py-16 flex justify-center"
+      className="bg-white shadow-sm px-4 lg:px-16  py-8 lg:py-16 flex justify-center dark:bg-gray-800"
     >
       <div className=" flex flex-col lg:flex-row mx-auto max-w-7xl px-4 sm:px-6 sm:mx-16  lg:px-8 mt-10 mb-10 text-center md:mx-0  lg:h-[350px] ">
         <div className="md:w-2/2  mx-auto mb-10 lg:mb-0 sm:w-2/2 ">
@@ -19,10 +19,10 @@ const About = () => {
           <h3 className="mb-2 font-semibold text-lg text-blue-500 text-center lg:text-left">
             ABOUT ME
           </h3>
-          <h4 className="text-3xl font-bold mb-5 text-center lg:text-left">
+          <h4 className="text-3xl font-bold mb-5 text-center lg:text-left dark:text-gray-300">
             Dedicated Front-end Developer.
           </h4>
-          <p className="text-center lg:text-left">
+          <p className="text-center lg:text-left dark:text-gray-400">
             As a Junior Front-End Developer, I possess an impressive arsenal of
             skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel
             in designing and maintaining responsive websites that offer a smooth

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import ThemeBtn from "./ThemeBtn";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -25,7 +26,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-12 text-white bg-amber-50 shadow-md fixed">
+    <div className="flex justify-between items-center w-full h-20 px-12  text-white dark:bg-slate-500  bg-amber-100 shadow-md fixed">
       <div>
         <h1 className=" text-black text-xl font-bold ">Kshitij.Dev</h1>
       </div>
@@ -41,17 +42,23 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+        <li className="pt-1">
+          <ThemeBtn />
+        </li>
       </ul>
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-black md:hidden"
+        className="cursor-pointer gap-2 mr-4 z-10 flex flex-row  text-black md:hidden"
       >
+        <div className="md:hidden mr-3">
+          <ThemeBtn />
+        </div>
         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white text-gray-700">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 dark:bg-gray-600 w-full h-screen bg-amber-50 text-black">
           {links.map(({ id, link }) => (
             <li
               key={id}

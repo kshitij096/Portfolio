@@ -37,14 +37,21 @@ const Home = () => {
     },
   ];
   return (
-    <div name="home" className="h-[40rem] w-full bg-neutral-50 shadow-sm">
-      <div className="max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full px-12 md:flex-row">
-        <div className="flex flex-col  h-auto  md:mt-56 mb-20">
-          <h2 className=" items-center h-auto justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
-            Front End
-            <Typewriter words={[" React Developer."]} typeSpeed={100} loop />
+    <div
+      name="home"
+      className=" h-full w-full bg-neutral-50 shadow-sm dark:bg-gray-800 dark:text-white"
+    >
+      <div className=" max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full  px-12 md:flex-row">
+        <div className="flex flex-col  h-[600px] w-[400px] md:h-[400px] md:w-[600px] md:mt-56 mb-20">
+          <h2 className=" items-center h-[200px] sm:h-[600px] justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
+            {/* Front End React Developer. */}
+            <Typewriter
+              words={["Front End React Developer."]}
+              typeSpeed={100}
+              loop
+            />
           </h2>
-          <p className="text-gray-600 mt-6 text-center sm:text-center md:text-left text-lg mx-10 sm:mx-auto md:mx-0 max-w-md">
+          <p className="text-gray-600 dark:text-gray-300 mt-6 text-center sm:text-center md:text-left text-lg mx-10 sm:mx-auto md:mx-0 max-w-md">
             Hi, I'm Kshitij Singh. A passionate Front-end React Developer.
           </p>
 
@@ -72,7 +79,7 @@ const Home = () => {
                 <ul key={id}>
                   <li>
                     <img
-                      className="w-12 h-10  hover:-translate-y-1/3 duration-200"
+                      className="w-12 h-10  hover:-translate-y-1/3  duration-200"
                       src={src}
                       alt="framework img"
                     />
