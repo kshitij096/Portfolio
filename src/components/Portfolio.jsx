@@ -153,13 +153,13 @@ const Project = () => {
                       />
                     </a>
                   </h3>
-                  <h3 className="text-3xl font-small p-2 text-red-600 dark:bg-gray-400 rounded-lg">
+                  <h3 className="text-3xl font-small p-2 bg-slate-400  text-red-600 dark:bg-gray-400 rounded-lg">
                     {status}
                   </h3>
                 </div>
               ) : (
                 <div className="flex gap-10 mt-8 items-center justify-center">
-                  <h3 className="text-3xl font-small p-2 text-red-600 dark:bg-gray-400 rounded-lg">
+                  <h3 className="text-3xl font-small p-2   text-red-600 dark:bg-gray-400 rounded-lg">
                     {status}
                   </h3>
                 </div>

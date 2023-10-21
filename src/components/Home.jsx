@@ -79,7 +79,7 @@ const Home = () => {
                 <ul key={id}>
                   <li>
                     <img
-                      className="w-12 h-10  hover:-translate-y-1/3  duration-200"
+                      className="w-12 h-10   hover:scale-125 duration-200"
                       src={src}
                       alt="framework img"
                     />
