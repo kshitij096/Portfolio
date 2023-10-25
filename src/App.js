@@ -5,7 +5,6 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/theme";
-import ThemeBtn from "./components/ThemeBtn";
 import { useEffect, useState } from "react";
 
 function App() {

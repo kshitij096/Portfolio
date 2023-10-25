@@ -2,6 +2,10 @@ import Profileimg from "../asset/ProfilePic.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import Css from "../asset/TecStackImg/Css.png";
 import HTML from "../asset/TecStackImg/HTML.png";
 import JS from "../asset/TecStackImg/JS.png";
@@ -13,37 +17,51 @@ const Home = () => {
   const imgStack = [
     {
       id: 1,
-      src: HTML,
+      src: "https://skillicons.dev/icons?i=html",
     },
     {
       id: 2,
-      src: Css,
+      src: "https://skillicons.dev/icons?i=css",
     },
     {
       id: 3,
-      src: JS,
+      src: "https://skillicons.dev/icons?i=js",
     },
     {
       id: 4,
-      src: React,
+      src: "https://skillicons.dev/icons?i=react",
     },
     {
       id: 5,
-      src: tailwind,
+      src: "https://skillicons.dev/icons?i=tailwind",
     },
     {
       id: 6,
-      src: typescriptImg,
+      src: "https://skillicons.dev/icons?i=ts",
     },
   ];
+
+  const socialLinks = [
+    {
+      id: 1,
+      name: faSquareGithub,
+      link: "https://github.com/kshitij096/",
+    },
+    {
+      id: 2,
+      name: faLinkedin,
+      link: "https://in.linkedin.com/",
+    },
+  ];
+
   return (
     <div
       name="home"
       className=" h-full w-full bg-neutral-50 shadow-sm dark:bg-gray-800 dark:text-white"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full  px-12 md:flex-row">
-        <div className="flex flex-col  h-[600px] w-[400px] md:h-[400px] md:w-[600px] md:mt-56 mb-20">
-          <h2 className=" items-center h-[200px] sm:h-[600px] justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
+        <div className="flex flex-col  h-[600px] w-[400px] sm:w-[460px] md:h-[420px] md:w-[600px] md:mt-56 mb-20">
+          <h2 className=" items-center h-[170px] sm:h-[600px]  justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
             {/* Front End React Developer. */}
             <Typewriter
               words={["Front End React Developer."]}
@@ -60,13 +78,27 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-4 mx-auto mb-10 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white w-fit px-4 mx-auto mb-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300 ">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
             </Link>
+            <div className="text-gray-600 flex md:flex-row gap-4 mb-6 md:mb-0 dark:text-gray-300 mt-6 text-center sm:text-center md:text-left text-lg mx-40 sm:mx-40 md:mx-0 max-w-md">
+              {socialLinks.map(({ id, name, link }) => (
+                <a
+                  key={id}
+                  className=" text-white text-4xl  sm:text-right"
+                  href={link}
+                >
+                  <FontAwesomeIcon
+                    className=" hover:scale-125 duration-200 "
+                    icon={name}
+                  />
+                </a>
+              ))}
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:mx-auto md:ml-0 sm:mt-16">
             <div className="flex flex-wrap items-center justify-center  ">
@@ -74,17 +106,14 @@ const Home = () => {
                 Tech Stack
               </h3>
             </div>
-            <div className="flex flex-row sm:flex-wrap items-center justify-center gap-4 ">
+            <div className="flex flex-row sm:flex-wrap items-center justify-center gap-2 ">
               {imgStack.map(({ id, src }) => (
-                <ul key={id}>
-                  <li>
-                    <img
-                      className="w-12 h-10   hover:scale-125 duration-200"
-                      src={src}
-                      alt="framework img"
-                    />
-                  </li>
-                </ul>
+                <img
+                  key={id}
+                  className="w-12 h-10 cursor-pointer transition ease-in-out delay-150  hover:-translate-y-2 hover:scale-110 duration-300"
+                  src={src}
+                  alt="framework img"
+                />
               ))}
             </div>
           </div>

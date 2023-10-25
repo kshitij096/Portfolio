@@ -26,7 +26,7 @@ const Footer = () => {
         name="footer"
         className="flex flex-col bg-[#2d2e32] dark:bg-gray-700"
       >
-        <div className=" flex flex-col items-center  justify-between  text-center mt-12 mb-12 mx-6 sm:mx-44 md:mx-96 sm:flex-row  gap-4">
+        <div className=" flex flex-col  items-center  justify-between  text-center mt-12 mb-12 mx-20 md:mx-32 lg:mx-72  md:mx-84 lg:mx-84 sm:flex-row ">
           <h3 className="text-white inline-block text-lg  font-bold">
             Copyright © {year}. All rights are reseved
           </h3>
