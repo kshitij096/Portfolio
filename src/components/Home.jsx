@@ -6,13 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-import Css from "../asset/TecStackImg/Css.png";
-import HTML from "../asset/TecStackImg/HTML.png";
-import JS from "../asset/TecStackImg/JS.png";
-import React from "../asset/TecStackImg/React.png";
-import tailwind from "../asset/TecStackImg/tailwind-css-icon.png";
-import typescriptImg from "../asset/TecStackImg/icons8-typescript-96.png";
-
 const Home = () => {
   const imgStack = [
     {
@@ -59,8 +52,8 @@ const Home = () => {
       name="home"
       className=" h-full w-full bg-neutral-50 shadow-sm dark:bg-gray-800 dark:text-white"
     >
-      <div className=" max-w-screen-lg mx-auto flex flex-col-reverse items-center justify-center h-full  px-12 md:flex-row">
-        <div className="flex flex-col  h-[600px] w-[400px] sm:w-[460px] md:h-[420px] md:w-[600px] md:mt-56 mb-20">
+      <div className=" max-w-screen mx-auto md:mx-10  flex flex-col-reverse items-center justify-center h-full  px-12 md:px-0 md:flex-row">
+        <div className="flex flex-col  h-[500px] w-[400px]  sm:w-[460px] md:h-[515px] lg:h-[425px] md:w-[600px] md:mt-56 mb-20 md:mx-14">
           <h2 className=" items-center h-[170px] sm:h-[600px]  justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
             {/* Front End React Developer. */}
             <Typewriter
@@ -85,11 +78,11 @@ const Home = () => {
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
             </Link>
-            <div className="text-gray-600 flex md:flex-row gap-4 mb-6 md:mb-0 dark:text-gray-300 mt-6 text-center sm:text-center md:text-left text-lg mx-40 sm:mx-40 md:mx-0 max-w-md">
+            <div className="  flex md:flex-row md:mx-auto  gap-4 mb-6 md:mb-0  mt-6 text-center   sm:text-center  text-lg mx-40 sm:mx-40  max-w-md">
               {socialLinks.map(({ id, name, link }) => (
                 <a
                   key={id}
-                  className=" text-white text-4xl  sm:text-right"
+                  className=" text-4xl text-black dark:text-gray-300 sm:ml-5 md:ml-0  lg:ml-0 sm:text-right"
                   href={link}
                 >
                   <FontAwesomeIcon
@@ -119,11 +112,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mb-10 mt-20 md:ml-10">
+        <div className="mb-10 mt-20 md:ml-10 md:mt-[-80px] lg:mt-20">
           <img
             src={Profileimg}
             alt="my profile"
-            className="rounded-2xl px-auto  mt-10 mx-auto  bg-cyan-500 shadow-lg shadow-cyan-500/50 w-3/3 md:w-80 "
+            className="rounded-2xl px-auto  mt-10 md:mt-4 mx-auto  bg-cyan-500 shadow-lg shadow-cyan-500/50 w-3/3 md:w-[25rem] lg:w-[19rem] "
           />
         </div>
       </div>

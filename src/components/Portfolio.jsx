@@ -4,6 +4,7 @@ import QuizImage from "../asset/portfolioImg/Quizimg.jpg";
 import NetflixCloneImg from "../asset/portfolioImg/NetFlixCloneImg.png";
 import EcomImg from "../asset/portfolioImg/Ecommerce-PNG.png";
 import BlogImg from "../asset/portfolioImg/blog-dev.-banner.png";
+import CurrencyConverterIMG from "../asset/portfolioImg/CurrencyconverterIMG.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -41,9 +42,19 @@ const Project = () => {
       techstack: "React TailwindCss",
     },
     {
+      key: "currency-converter",
+      image: CurrencyConverterIMG,
+      direction: false,
+      title: "Currency Converter",
+      text: "Currency Converter is a web application that enables users to perform currency conversions using the API. With a simple and user-friendly interface, this app allows users to select the currencies they want to convert from and to, specify the amount, and instantly get the converted result.",
+      githubLink: "https://github.com/kshitij096/Currency-Converter",
+      liveSite: "https://currency-converter-geek.netlify.app/",
+      techstack: "React TailwindCss API",
+    },
+    {
       key: "blog-app",
       image: BlogImg,
-      direction: false,
+      direction: true,
       title: "Blog App",
       text: "This is a Blog app to share your thoughts",
       githubLink: "https://github.com/kshitij096/Blog_Site",
@@ -54,7 +65,7 @@ const Project = () => {
     {
       key: "ecom-app",
       image: EcomImg,
-      direction: true,
+      direction: false,
       title: "Ecom-App MERN",
       text: "This is a MERN stack implemented App.",
       // githubLink: "https://github.com/kshitij096/Blog_Site",
@@ -90,18 +101,18 @@ const Project = () => {
           }) => (
             <div
               key={key}
-              className={`flex flex-col w-[19rem] sm:w-[25rem] md:w-[34rem] h-auto lg:w-[60rem] ${
+              className={`flex flex-col w-[21rem] sm:w-[26rem] md:w-[30rem]  h-auto lg:w-[60rem] ${
                 direction ? "lg:flex-row-reverse" : "lg:flex-row"
-              } mx-3 sm:mx-8 mt-16 px-6 py-4 shadow-2xl rounded-3xl bg-white dark:bg-gray-500 `}
+              }  sm:mx-8 mt-16 px-6 py-4 shadow-2xl rounded-3xl bg-white dark:bg-gray-500 `}
             >
-              <div className="h-auto w-auto md:w-[31rem] lg:w-100  flex flex-wrap flex-col items-center text-center">
+              <div className="h-auto w-auto md:w-[27rem] lg:w-100  flex flex-wrap flex-col items-center text-center">
                 <img
                   className="w-full h-[250px] md:h-[300px] object-fit lg:h-[350px] rounded-3xl"
                   src={image}
                   alt="portfolioImg"
                 />
               </div>
-              <div className="flex flex-col w-auto md:w-[27rem] mt-9 lg:mt-0 sm:mx-8 mx-1">
+              <div className="flex flex-col w-auto md:w-[23rem]  lg:w-[28rem] mt-9 lg:mt-0 sm:mx-8 lg:mr-6 lg:ml-0">
                 <h3 className="text-lg mb-4 font-semibold text-black flex items-center justify-center capitalize">
                   {title}
                 </h3>

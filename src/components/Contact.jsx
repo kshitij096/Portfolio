@@ -35,11 +35,11 @@ const Contact = () => {
             Don't be shy! Hit me up! 👇
           </h3>
         </div>
-        <div className="flex flex-col md:flex-row flex-wrap text-left">
+        <div className="flex flex-col md:flex-row sm:flex-col flex-wrap text-left">
           {contact.map(({ id, icon, location, address, city }) => (
             <div
               key={id}
-              className="flex md:flex-row flex-col  md:items-center justify-center items-center  my-0 gap-4 md:mr-28"
+              className="flex  flex-col md:flex-row  items-center justify-center md:my-6  my-0 gap-4 md:mr-28"
             >
               <span>
                 <FontAwesomeIcon

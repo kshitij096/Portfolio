@@ -49,11 +49,12 @@ const NavBar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer gap-2 mr-4 z-10 flex flex-row  text-black md:hidden"
+        className="cursor-pointer  z-10 flex flex-row  text-black md:hidden"
       >
-        <div className="md:hidden mr-3">
+        <div className="md:hidden mr-3 ">
           <ThemeBtn />
         </div>
+        <div className="ml-2"></div>
         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
 
