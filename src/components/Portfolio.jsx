@@ -3,7 +3,7 @@ import MyTaskImg from "../asset/portfolioImg/Mytaskimg.jpg";
 import QuizImage from "../asset/portfolioImg/Quizimg.jpg";
 import NetflixCloneImg from "../asset/portfolioImg/NetFlixCloneImg.png";
 import EcomImg from "../asset/portfolioImg/Ecommerce-PNG.png";
-import BlogImg from "../asset/portfolioImg/blog-dev.-banner.png";
+import BlogImg from "../asset/portfolioImg/BlogApp Demo.png";
 import CurrencyConverterIMG from "../asset/portfolioImg/CurrencyconverterIMG.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +18,7 @@ const Project = () => {
       title: "Netflix Clone",
       text: "This is a React project that use  Firebase for real-time database storage. The user can interact with the movie cards and play their trailer in this project. The movies that are shown are constantly changing with time.",
       githubLink: "https://github.com/kshitij096/Netflix_Clone",
-      liveSite: "https://netflix-clone-app-geek.netlify.app/",
+      liveSite: "https://movi-clon-geek.netlify.app/",
       techstack: "React TailwindCss Firebase ContextAPI",
     },
     {
@@ -56,10 +56,9 @@ const Project = () => {
       image: BlogImg,
       direction: true,
       title: "Blog App",
-      text: "This is a Blog app to share your thoughts",
+      text: "This is a Blog app to share your thoughts.This website is continpuously updated with new features and improvements to enhance the user experience.",
       githubLink: "https://github.com/kshitij096/Blog_Site",
-      // liveSite: "",
-      status: "Coming soon",
+      liveSite: "https://blog-app-kshitij.netlify.app/",
       techstack: "React TailwindCss Redux-Toolkit",
     },
     {
