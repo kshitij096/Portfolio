@@ -53,8 +53,8 @@ const Home = () => {
       className=" h-full w-full bg-neutral-50 shadow-sm dark:bg-gray-800 dark:text-white"
     >
       <div className=" max-w-screen mx-auto md:mx-10  flex flex-col-reverse items-center justify-center h-full  px-12 md:px-0 md:flex-row">
-        <div className="flex flex-col  h-[500px] w-[400px]  sm:w-[460px] md:h-[515px] lg:h-[425px] md:w-[600px] md:mt-56 mb-20 md:mx-14">
-          <h2 className=" items-center h-[170px] sm:h-[600px]  justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
+        <div className="flex flex-col  h-[600px] w-[400px]  sm:w-[460px] md:h-[550px] lg:h-[550px] md:w-[600px] md:mt-56 mb-20 md:mx-14">
+          <h2 className=" items-center h-[150px] sm:h-[160px] md:h-[150px] lg:h-[120px] justify-center text-cyan-400 text-5xl text-center sm:text-center md:text-left sm:text-5xl font-bold mx-10 md:mx-0 ">
             {/* Front End React Developer. */}
             <Typewriter
               words={["Front End React Developer."]}
@@ -66,18 +66,31 @@ const Home = () => {
             Hi, I'm Kshitij Singh. A passionate Front-end React Developer.
           </p>
 
-          <div className="mt-3 md:w-0">
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-4 mx-auto mb-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-            >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300 ">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </Link>
+          <div className="mt-3 md:w-0  ">
+            <div className="flex flex-row mx-10 md:mx-0  md:gap-4  justify-center sm:justify-start">
+              <Link
+                to="portfolio"
+                smooth
+                duration={500}
+                className="group  text-white w-fit px-4 mx-auto mb-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              >
+                Portfolio
+                <span className="group-hover:rotate-90 duration-300 ">
+                  <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                </span>
+              </Link>
+              <a
+                href="https://drive.google.com/file/d/1Vs3aN7kHwv-o6_lEDR27zikHzlYF7_n-/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group text-white w-fit px-4 mx-auto mb-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              >
+                Resume
+                <span className="group-hover:rotate-90 duration-300 ">
+                  <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+                </span>
+              </a>
+            </div>
             <div className="  flex md:flex-row md:mx-auto  gap-4 mb-6 md:mb-0  mt-6 text-center   sm:text-center  text-lg mx-40 sm:mx-40  max-w-md">
               {socialLinks.map(({ id, name, link }) => (
                 <a
@@ -94,12 +107,12 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:mx-auto md:ml-0 sm:mt-16">
-            <div className="flex flex-wrap items-center justify-center  ">
+            <div className="flex flex-wrap  items-center justify-center  ">
               <h3 className="text-lg font-medium leading-8 mb-8 sm:mb-0 sm:mr-8 border-b-2 sm:border-b-0">
                 Tech Stack
               </h3>
             </div>
-            <div className="flex flex-row sm:flex-wrap items-center justify-center gap-2 ">
+            <div className="flex flex-row  items-center justify-center gap-2 ">
               {imgStack.map(({ id, src }) => (
                 <img
                   key={id}
